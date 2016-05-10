@@ -17,10 +17,8 @@ authserver:
 # requests using zuul
 zuul:
   routes:
-    order-ops: /api/order/**
-    user-webservice: /api/user/**
-    task-webservice: /api/task/**
-    web-portal: /**
+    order-ops: /api/v1/order/**
+    catalog-ops: /api/v1/catalog/**
     user: 
       path: /api/loggedinuser/**
       stripPrefix: true
