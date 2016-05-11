@@ -30,8 +30,8 @@ spring:
     show-sql: false
     hibernate:
       ddl-auto: none
-  
-  jsondoc:
+---  
+jsondoc:
  version: 1.0
  basePath: http://localhost:8081
  packages[0]: com.lenskart.order.controller
