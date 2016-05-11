@@ -30,3 +30,10 @@ spring:
     show-sql: false
     hibernate:
       ddl-auto: none
+  
+  jsondoc:
+ version: 1.0
+ basePath: http://localhost:8081
+ packages[0]: com.lenskart.order.controller
+ packages[1]: com.lenskart.order.model
+ displayMethodAs: URI   
