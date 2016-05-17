@@ -17,6 +17,7 @@ spring:
     resource: 
       userInfoUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/me
       preferTokenInfo: false 
+      
 ---
 spring:
   datasource:
@@ -24,6 +25,8 @@ spring:
     username: root
     password: root
     driver-class: com.mysql.jdbc.Driver
+    jpa.hibernate.naming-strategy=org.hibernate.cfg.ImprovedNamingStrategy
+    jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL5Dialect
   
   jpa:
     database-platform: org.hibernate.dialect.MySQLDialect
