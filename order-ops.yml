@@ -37,3 +37,10 @@ jsondoc:
  packages[0]: com.lenskart.order.controller
  packages[1]: com.lenskart.order.model
  displayMethodAs: URI 
+--- 
+spring:
+ redis:
+   host: 52.74.198.94
+   port: 6379
+   database: 13
+   password: C0mpl#xP@ass
